@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap - Tooltip | Popover</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet"> 
+
+
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+  </head>
+  <body>
+  <br>
+    <div class="container">
+    		<div class="page-header">
+    			<h1>Bootstrap - Tooltip & Popover</h1>
+    		</div>
+
+        <div class="row">
+           <div class="col-sm-6">
+              <h3>Tooltip</h3>
+                <button type="button" class="btn btn-default" 
+                        data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                  Tooltip on left
+                </button>
+
+                 <button type="button" class="btn btn-default" 
+                        data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  Tooltip on top
+                </button>
+                <button type="button" class="btn btn-default" 
+                        data-toggle="tooltip" data-placement="rigth" title="Tooltip on rigth">
+                  Tooltip on rigth
+                </button>          
+
+                <button type="button" class="btn btn-default" 
+                        data-toggle="tooltip" data-placement="padrão" title="Tooltip">
+                  Tooltip on padrão
+                </button>
+
+                <br><br><br>
+
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+
+                    <button type="button" class="btn btn-default" 
+                            data-toggle=tooltip title="Tocar">
+                       <span class="glyphicon glyphicon-play"></span>
+                    </button>
+
+                    <button type="button" class="btn btn-default" 
+                            data-toggle=tooltip title="pausar">
+                       <span class="glyphicon glyphicon-pause"></span>
+                    </button>
+
+                    <button type="button" class="btn btn-default" 
+                            data-toggle=tooltip title="parar">
+                       <span class="glyphicon glyphicon-stop"></span>
+                    </button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                      <h3>Popvoers</h3>
+                      <button type="button" class="btn btn-lg btn-danger" 
+                              data-toggle="popover" title="Detalhes!!"
+                              data-content="Lorem ipsum dolorem sit amet!!"
+                              data-placemente="rigth">
+                        Detalhes
+                      </button>
+            </div>
+ 
+
+
+    </div>
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+       $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+         $('[data-toggle="popover"]').popover()
+      })
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+    <!-- https://getbootstrap.com/docs/3.3/javascript/#tooltips -->
+    <!-- https://getbootstrap.com/docs/3.3/javascript/#popovers -->
